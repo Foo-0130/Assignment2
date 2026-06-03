@@ -89,3 +89,27 @@ The work done $W$ is positive when the system expands against an external pressu
 </iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Analysis
+**Process Capability (P=200kPa, T=338K):**
+
+- **Target:** 50mm (LSL: 45, USL: 55)
+- **Cpk:** 0.82 (Example Result)
+- **Status:** Machine 1 is *not* fully capable (Cpk < 1.33).
+
+$$\Delta U = Q - W$$
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/control_chart_m1.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;'>
+</iframe>
+:::
+::::

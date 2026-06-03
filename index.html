@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>slides-with-biblio</title>
+  <title>slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -558,74 +558,103 @@
     <div class="slides">
 
 
-<section class="slide level1">
+<section class="slide level3">
 
+</section>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h2 id="sample-slides">Sample slides</h2>
+<section>
+<section id="sample-slides" class="title-slide slide level2">
+<h2>Sample slides</h2>
+
+</section>
 <h4 id="placeholdername">PlaceHolderName</h4>
 <h4 id="universiti-malaysia-perlis">Universiti Malaysia Perlis</h4>
 <h4 id="placeholderemail.com"><a
 href="mailto:placeholder@email.com">placeholder@email.com</a></h4>
-<!-- __AUDIO_INTRO_DO_NOT_TOUCH__ -->
+<!-- __AUDIO_INTRO_DO_NOT_TOUCH__ --></section>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/logo1.png" /></p>
 </div>
 </div>
-</section>
-<section class="slide level1">
+<section class="slide level3">
 
+</section>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="slide-one">Slide one</h3>
+<section id="slide-one" class="slide level3">
+<h3>Slide one</h3>
 <p><strong>Key Concepts:</strong> - Energy conservation per <span
 class="citation" data-cites="carnot1824">(1)</span>. - <span
 class="math inline">\(\Delta U = Q - W\)</span></p>
+</section>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/sample.png" /></p>
 </div>
 </div>
-</section>
-<section class="slide level1">
+<section class="slide level3">
 
 <p><span class="slide-title"
 data-title="My Hidden Slide Name"></span></p>
 <p><img data-src="media/pics/wide.jpeg" /></p>
 </section>
-<section class="slide level1">
+<section class="slide level3">
 
+</section>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="the-master-equation">The Master Equation</h3>
+<section id="the-master-equation" class="slide level3">
+<h3>The Master Equation</h3>
 <p>The fundamental relation of thermodynamics:</p>
 <p><span class="math display">\[\Delta U = Q - W\]</span></p>
 <p>The work done <span class="math inline">\(W\)</span> is positive when
 the system expands against an external pressure.</p>
+</section>
 </div><div class="column" style="width:50%;">
 <video data-src="media/videos/sample.mp4" data-autoplay loop muted width="100%">
 </video>
 </div>
 </div>
-</section>
-<section class="slide level1">
+<section class="slide level3">
 
+</section>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="visualizing-the-gas-law">Visualizing the Gas Law</h3>
+<section id="visualizing-the-gas-law" class="slide level3">
+<h3>Visualizing the Gas Law</h3>
 <p><strong>Interactive Model:</strong></p>
 <ul>
 <li>P, V, and T relationships.</li>
 <li>Use the slider to adjust pressure.</li>
 <li>Observe the phase boundary.</li>
 </ul>
+</section>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/sample.html" width="100%" height="500px" style="border:none;" scrolling="no">
 </iframe>
 </div>
 </div>
+<section class="slide level3">
+
 </section>
-<section id="bibliography" class="slide level1">
-<h1>Bibliography</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="machine-1-analysis" class="slide level3">
+<h3>Machine 1 Analysis</h3>
+<p><strong>Process Capability (P=200kPa, T=338K):</strong></p>
+<ul>
+<li><strong>Target:</strong> 50mm (LSL: 45, USL: 55)</li>
+<li><strong>Cpk:</strong> 0.82 (Example Result)</li>
+<li><strong>Status:</strong> Machine 1 is <em>not</em> fully capable
+(Cpk &lt; 1.33).</li>
+</ul>
+<p><span class="math display">\[\Delta U = Q - W\]</span></p>
+</section>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/control_chart_m1.html" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
 <div id="refs" class="references csl-bib-body" role="list">
 <div id="ref-carnot1824" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Sadi
@@ -633,7 +662,6 @@ Carnot. Reflections on the motive power of fire. Annals of Physics.
 1824;1:1–100.</div>
 </div>
 </div>
-</section>
     </div>
   </div>
 
@@ -789,6 +817,14 @@ Carnot. Reflections on the motive power of fire. Annals of Physics.
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: "90%",
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
 
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
