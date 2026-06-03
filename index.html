@@ -562,48 +562,9 @@
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h2 id="production-analysis">Production Analysis</h2>
-<h4 id="machines-1-2-3">Machines 1, 2, &amp; 3</h4>
-<h4 id="universiti-malaysia-perlis">Universiti Malaysia Perlis</h4>
-<audio id="bg-music" src="media/audio/sb.m4a" loop>
-</audio>
-<div id="audio-credit"
-style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity: 0.6;">
-<p>Music: “Adrift” by Scott Buckley (CC BY 4.0)</p>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('bg-music');
-    const credit = document.getElementById('audio-credit');
-
-    // hide credit by default
-    credit.style.display = 'none';
-
-    const test = new Audio('media/audio/bgm.mp3');
-
-    test.addEventListener('canplaythrough', () => {
-      // bgm.mp3 exists → use it, keep credit hidden
-      audio.src = 'media/audio/bgm.mp3';
-    }, { once: true });
-
-    test.addEventListener('error', () => {
-      // bgm.mp3 missing → sb.m4a will play → show credit
-      credit.style.display = 'block';
-    }, { once: true });
-
-    document.addEventListener('click', () => {
-      if (Reveal.getIndices().h === 0) {
-        audio.volume = 0.5;
-        audio.play();
-      }
-    }, { once: true });
-
-    Reveal.on('slidechanged', (event) => {
-      if (event.indexh > 0) { audio.pause(); }
-      else { audio.play(); }
-    });
-  });
-</script>
+<h2 id="quality-control-report">Quality Control Report</h2>
+<h3 id="subgroup-analysis-n200">Subgroup Analysis (N=200)</h3>
+<h4 id="machine-comparison">Machine Comparison</h4>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/logo1.png" /></p>
 </div>
@@ -613,9 +574,9 @@ style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity:
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-1-control">Machine 1 Control</h3>
-<p><strong>Stability Analysis:</strong> - Pressure: 200kPa - Temp: 338K
-- Monitoring Part Length variance.</p>
+<h3 id="machine-1-stability">Machine 1 Stability</h3>
+<p><strong>Control Chart (I-Chart):</strong> - Sample size: 200 groups.
+- Monitoring individual deviations.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/control_chart_m1.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -627,9 +588,8 @@ style="position: absolute; bottom: 40px; right: 20px; font-size: 0.6em; opacity:
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-1-capability">Machine 1 Capability</h3>
-<p><strong>Performance Metrics:</strong> - Target: 50mm - Tolerance:
-[45, 55] - Assessing <span class="math inline">\(\sigma\)</span>
-levels.</p>
+<p><strong>Process Analysis:</strong> - Evaluation of <span
+class="math inline">\(C_{pk}\)</span> stability.</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/capability_m1.png" /></p>
 </div>
@@ -639,9 +599,9 @@ levels.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-2-control">Machine 2 Control</h3>
-<p><strong>Stability Analysis:</strong> - Verification of consistent
-output. - Statistical Process Control.</p>
+<h3 id="machine-2-stability">Machine 2 Stability</h3>
+<p><strong>Control Chart (I-Chart):</strong> - Standardized 200-group
+view.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/control_chart_m2.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -653,8 +613,8 @@ output. - Statistical Process Control.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-2-capability">Machine 2 Capability</h3>
-<p><strong>Performance Metrics:</strong> - Evaluating if Machine 2 meets
-design specs. - Distribution analysis.</p>
+<p><strong>Process Analysis:</strong> - Distribution vs
+Specifications.</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/capability_m2.png" /></p>
 </div>
@@ -664,9 +624,8 @@ design specs. - Distribution analysis.</p>
 
 <div class="columns">
 <div class="column" style="width:50%;">
-<h3 id="machine-3-control">Machine 3 Control</h3>
-<p><strong>Stability Analysis:</strong> - Final production line check. -
-Monitoring for trends/shifts.</p>
+<h3 id="machine-3-stability">Machine 3 Stability</h3>
+<p><strong>Control Chart (I-Chart):</strong> - 200 groups analysis.</p>
 </div><div class="column" style="width:50%;">
 <iframe data-src="media/plots/control_chart_m3.html" width="100%" height="500px" style="border:none;">
 </iframe>
@@ -678,8 +637,7 @@ Monitoring for trends/shifts.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="machine-3-capability">Machine 3 Capability</h3>
-<p><strong>Performance Metrics:</strong> - Quality assurance overview. -
-Comparison to Machines 1 and 2.</p>
+<p><strong>Process Analysis:</strong> - Final audit of Machine 3.</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="media/pics/capability_m3.png" /></p>
 </div>

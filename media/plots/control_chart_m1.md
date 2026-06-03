@@ -1,1 +1,1 @@
-Code for Machine 1 control chart generated.
+q <- qcc(head(subset(`X008..2.`, Machine==1), 200)$PartLength, type='xbar.one')

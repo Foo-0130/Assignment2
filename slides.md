@@ -13,17 +13,15 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 
-## Production Analysis
-#### Machines 1, 2, & 3
-#### Universiti Malaysia Perlis
+## Quality Control Report
+### Subgroup Analysis (N=200)
+#### Machine Comparison
 
-<!-- __AUDIO_INTRO_DO_NOT_TOUCH__ -->
-
-:::
+::: 
 
 ::: {.column width="50%"}
 ![](media/pics/logo1.png)
-:::
+::: 
 
 ::::
 
@@ -31,21 +29,15 @@ hash: true
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 1 Control
-**Stability Analysis:**
-- Pressure: 200kPa
-- Temp: 338K
-- Monitoring Part Length variance.
-:::
+### Machine 1 Stability
+**Control Chart (I-Chart):**
+- Sample size: 200 groups.
+- Monitoring individual deviations.
+::: 
 
 ::: {.column width="50%"}
-<iframe 
-  data-src='media/plots/control_chart_m1.html' 
-  width='100%' 
-  height='500px' 
-  style='border:none;'>
-</iframe>
-:::
+<iframe data-src='media/plots/control_chart_m1.html' width='100%' height='500px' style='border:none;'></iframe>
+::: 
 ::::
 
 ---
@@ -53,35 +45,27 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 1 Capability
-**Performance Metrics:**
-- Target: 50mm
-- Tolerance: [45, 55]
-- Assessing $\sigma$ levels.
-:::
+**Process Analysis:**
+- Evaluation of $C_{pk}$ stability.
+::: 
 
 ::: {.column width="50%"}
 ![](media/pics/capability_m1.png)
-:::
+::: 
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 2 Control
-**Stability Analysis:**
-- Verification of consistent output.
-- Statistical Process Control.
-:::
+### Machine 2 Stability
+**Control Chart (I-Chart):**
+- Standardized 200-group view.
+::: 
 
 ::: {.column width="50%"}
-<iframe 
-  data-src='media/plots/control_chart_m2.html' 
-  width='100%' 
-  height='500px' 
-  style='border:none;'>
-</iframe>
-:::
+<iframe data-src='media/plots/control_chart_m2.html' width='100%' height='500px' style='border:none;'></iframe>
+::: 
 ::::
 
 ---
@@ -89,34 +73,27 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 2 Capability
-**Performance Metrics:**
-- Evaluating if Machine 2 meets design specs.
-- Distribution analysis.
-:::
+**Process Analysis:**
+- Distribution vs Specifications.
+::: 
 
 ::: {.column width="50%"}
 ![](media/pics/capability_m2.png)
-:::
+::: 
 ::::
 
 ---
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Machine 3 Control
-**Stability Analysis:**
-- Final production line check.
-- Monitoring for trends/shifts.
-:::
+### Machine 3 Stability
+**Control Chart (I-Chart):**
+- 200 groups analysis.
+::: 
 
 ::: {.column width="50%"}
-<iframe 
-  data-src='media/plots/control_chart_m3.html' 
-  width='100%' 
-  height='500px' 
-  style='border:none;'>
-</iframe>
-:::
+<iframe data-src='media/plots/control_chart_m3.html' width='100%' height='500px' style='border:none;'></iframe>
+::: 
 ::::
 
 ---
@@ -124,12 +101,11 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 ### Machine 3 Capability
-**Performance Metrics:**
-- Quality assurance overview.
-- Comparison to Machines 1 and 2.
-:::
+**Process Analysis:**
+- Final audit of Machine 3.
+::: 
 
 ::: {.column width="50%"}
 ![](media/pics/capability_m3.png)
-:::
+::: 
 ::::
