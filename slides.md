@@ -13,10 +13,9 @@ hash: true
 :::: {.columns}
 ::: {.column width="50%"}
 
-## Sample slides
-#### PlaceHolderName
+## Production Analysis
+#### Machines 1, 2, & 3
 #### Universiti Malaysia Perlis
-#### [placeholder@email.com](mailto:placeholder@email.com)
 
 <!-- __AUDIO_INTRO_DO_NOT_TOUCH__ -->
 
@@ -32,76 +31,11 @@ hash: true
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Slide one
-**Key Concepts:**
-- Energy conservation per @carnot1824.
-- $\Delta U = Q - W$
-:::
-
-::: {.column width="50%"}
-![](media/pics/sample.png)
-:::
-::::
-
----
-
-<span class="slide-title" data-title="My Hidden Slide Name"></span>
-
-![](media/pics/wide.jpeg)
-
----
-
-:::: {.columns}
-::: {.column width="50%"}
-### The Master Equation
-The fundamental relation of thermodynamics:
-
-$$\Delta U = Q - W$$
-
-The work done $W$ is positive when the system expands against an external pressure.
-:::
-
-::: {.column width="50%"}
-<video data-src="media/videos/sample.mp4" data-autoplay loop muted width="100%"></video>
-:::
-
-::::
-
----
-
-:::: {.columns}
-::: {.column width="50%"}
-### Visualizing the Gas Law
-**Interactive Model:**
-
-- P, V, and T relationships.
-- Use the slider to adjust pressure.
-- Observe the phase boundary.
-:::
-
-::: {.column width="50%"}
-<iframe 
-  data-src="media/plots/sample.html" 
-  width="100%" 
-  height="500px" 
-  style="border:none;" 
-  scrolling="no">
-</iframe>
-:::
-::::
-
----
-
-:::: {.columns}
-::: {.column width="50%"}
-### Machine 1 Analysis
-**Process Capability (P=200kPa, T=338K):**
-
-- **Target:** 50mm (LSL: 45, USL: 55)
-- **Cpk:** 0.82 (Example Result)
-- **Status:** Machine 1 is *not* fully capable (Cpk < 1.33).
-
-$$\Delta U = Q - W$$
+### Machine 1 Control
+**Stability Analysis:**
+- Pressure: 200kPa
+- Temp: 338K
+- Monitoring Part Length variance.
 :::
 
 ::: {.column width="50%"}
@@ -111,5 +45,91 @@ $$\Delta U = Q - W$$
   height='500px' 
   style='border:none;'>
 </iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 1 Capability
+**Performance Metrics:**
+- Target: 50mm
+- Tolerance: [45, 55]
+- Assessing $\sigma$ levels.
+:::
+
+::: {.column width="50%"}
+![](media/pics/capability_m1.png)
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Control
+**Stability Analysis:**
+- Verification of consistent output.
+- Statistical Process Control.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/control_chart_m2.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;'>
+</iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 2 Capability
+**Performance Metrics:**
+- Evaluating if Machine 2 meets design specs.
+- Distribution analysis.
+:::
+
+::: {.column width="50%"}
+![](media/pics/capability_m2.png)
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Control
+**Stability Analysis:**
+- Final production line check.
+- Monitoring for trends/shifts.
+:::
+
+::: {.column width="50%"}
+<iframe 
+  data-src='media/plots/control_chart_m3.html' 
+  width='100%' 
+  height='500px' 
+  style='border:none;'>
+</iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Machine 3 Capability
+**Performance Metrics:**
+- Quality assurance overview.
+- Comparison to Machines 1 and 2.
+:::
+
+::: {.column width="50%"}
+![](media/pics/capability_m3.png)
 :::
 ::::
